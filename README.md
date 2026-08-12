@@ -6,6 +6,10 @@ This project explores what an e-commerce experience can look like when the focus
 
 > **Live Demo:**
 https://roaring-paprenjak-0cb196.netlify.app/
+<img width="1917" height="922" alt="image" src="https://github.com/user-attachments/assets/7308a370-3f71-4fea-aa76-17107924d425" />
+<img width="1903" height="871" alt="image" src="https://github.com/user-attachments/assets/73d869d7-d481-4744-8d51-3e542a69260b" />
+<img width="1907" height="882" alt="image" src="https://github.com/user-attachments/assets/4700bd30-cb11-4180-9cea-453db1c00da3" />
+![Uploading image.png…]()
 
 ---
 
