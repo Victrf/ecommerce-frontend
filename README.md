@@ -4,7 +4,8 @@ A modern, cinematic e-commerce frontend built with **React, Vite, Tailwind CSS, 
 
 This project explores what an e-commerce experience can look like when the focus goes beyond simply displaying products and instead considers **interaction, visual storytelling, user behavior, and application architecture**.
 
-> **Live Demo:** [View the application](https://roaring-paprenjak-0cb196.netlify.app/onboarding)
+> **Live Demo:**
+https://roaring-paprenjak-0cb196.netlify.app/onboarding
 
 ---
 
