@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* -----------------------------
+   Global Cursor
+----------------------------- */
+* {
+  cursor: none;
+}
+
+/* -----------------------------
+   Global baseline
+----------------------------- */
+body {
+  @apply bg-gray-50 text-gray-900;
+}
+
+/* -----------------------------
+   Design Tokens (Foundation)
+----------------------------- */
+:root {
+
+  /* spacing system */
+  --space-page-x: 1.5rem;
+
+  /* base page padding */
+  --space-page-x-md: 2.5rem;
+
+  /* spacing between sections */
+  --space-section: 2rem;
+
+  /* vertical stacking */
+  --space-stack: 1rem;
+
+  /* radius & elevation */
+  --radius-lg: 0.75rem;
+
+  --shadow-soft:
+    rgba(0, 0, 0, 0.08)
+    0 10px 20px -10px;
+
+  /* typography scale */
+  --text-title: 1.5rem;
+
+  /* 24px */
+  --text-sub: 1.125rem;
+
+  /* 18px */
+  --text-body: 0.95rem;
+
+  /* ~15px */
+}
+
+/* -----------------------------
+   Hide scrollbar
+----------------------------- */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

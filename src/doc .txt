@@ -1,0 +1,161 @@
+✔ wishlist
+✔ persistent auth
+✔ user profile
+✔ order history
+✔ coupon system
+✔ stock management
+✔ related products
+✔ product ratings
+✔ reviews
+✔ pagination
+✔ recently viewed
+
+
+
+
+Advanced Browsing
+✔ price range slider
+✔ multi-category filtering
+✔ featured collections
+✔ trending products
+✔ recommendations
+
+
+
+Correct architecture path
+Phase 1
+
+Frontend auth infrastructure
+
+Phase 2
+
+Customer account system
+
+Phase 3
+
+Order ownership
+
+Phase 4
+
+Purchase history
+
+Phase 5
+
+Tracking UI
+
+Important architectural note
+
+We should STILL keep:
+
+frontend-first architecture
+
+for now.
+
+Meaning:
+
+Zustand auth state
+simulated session persistence
+operational ownership flow
+
+THEN later:
+
+Supabase/Firebase/Auth0
+backend auth
+real database ownership
+This is the correct evolution
+
+You are now moving from:
+
+commerce operations
+
+into:
+
+full commerce platform infrastructure
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Recommended next build
+1
+
+Auth Store Upgrade
+
+2
+
+Role System
+
+3
+
+Admin Route Protection
+
+4
+
+Operational Access Control
+
+5
+
+Session Persistence
+
+
+
+
+
+
+
+
+
+
+<Route
+  path="/admin"
+  element={
+    <ProtectedRoute adminOnly>
+      <AdminDashboard />
+    </ProtectedRoute>
+  }
+/>
+
+<Route
+  path="/admin/add-product"
+  element={
+    <ProtectedRoute adminOnly>
+      <AddProduct />
+    </ProtectedRoute>
+  }
+/>
+
+<Route
+  path="/admin/hero-management"
+  element={
+    <ProtectedRoute adminOnly>
+      <HeroManagement />
+    </ProtectedRoute>
+  }
+/>
+
+<Route
+  path="/admin/orders"
+  element={
+    <ProtectedRoute adminOnly>
+      <OrdersManagement />
+    </ProtectedRoute>
+  }
+/>
+
+<Route
+  path="/admin/orders/:id"
+  element={
+    <ProtectedRoute adminOnly>
+      <OrderDetails />
+    </ProtectedRoute>
+  }
+/>
